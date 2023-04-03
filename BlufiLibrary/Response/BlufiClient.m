@@ -1037,7 +1037,7 @@ enum {
 - (void)centralManagerDidUpdateState:(nonnull CBCentralManager *)central {
     _blePowerOn = central.state == CBManagerStatePoweredOn;
     if (_blePowerOn) {
-        NSLog(@"Blufi Client BLE state pwoered on");
+        NSLog(@"Blufi Client BLE state powered on");
         if (_bleConnectMark) {
             _bleConnectMark = NO;
             [self scanBLE];
